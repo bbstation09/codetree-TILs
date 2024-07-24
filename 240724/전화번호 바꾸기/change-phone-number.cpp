@@ -3,16 +3,16 @@
 using namespace std;
 
 int main() {
-    string phoneNumber;
-    cin >> phoneNumber;
+    // 여기에 코드를 작성해주세요.
+    int x,y,z;
 
-    // 전화번호를 하이픈을 기준으로 나누기
-    string prefix = phoneNumber.substr(0, 4); // "010-"
-    string xxxx = phoneNumber.substr(4, 4);   // "1234"
-    string yyyy = phoneNumber.substr(9, 4);   // "5678"
+    cin>>x; // 010 = 10
+    cin.get(); // -
+    cin>>y;
+    cin.get();
+    cin>>z;
 
-    // 형식에 맞게 출력
-    cout << prefix << yyyy << "-" << xxxx << endl;
-
+    cout<<"010-"<<z<<"-"<<y;
+    
     return 0;
 }
