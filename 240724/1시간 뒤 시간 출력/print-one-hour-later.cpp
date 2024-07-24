@@ -6,8 +6,11 @@ int main() {
     int h,m;
     char c;
 
-    cin>>h>>c>>m;
-    h++;
-    cout<<h<<c<<m;
+    cin>>h;
+    cin.get(); // 중간 입력 무시
+    cin>>m;
+
+    cout<<h+1<<":"<<m;
+
     return 0;
 }
