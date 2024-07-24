@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -8,6 +9,6 @@ int main() {
     cin>>a>>b;
     sum=a+b;
     avr = (double)(a+b)/2;
-    cout<<sum<<" "<<avr;
+    cout<<sum<<" "<<fixed<<setprecision(1)<<avr;
     return 0;
 }
