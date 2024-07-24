@@ -1,14 +1,11 @@
 #include <iostream>
-
+#include <iomanip>
 using namespace std;
 
 int main() {
     int a, b;
     cin >> a >> b;
-
-    cout << fixed;
-    cout.precision(2);
     
-    cout << (double)(a + b) / (a - b);  // 형변환
+    cout << fixed << setprecision(2) << (double)(a + b) / (a - b);  // 형변환
     return 0;
 }
