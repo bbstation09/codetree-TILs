@@ -7,8 +7,8 @@ int main() {
     cin>>n;
     
     area=n*n;
-    cout<<area;
-    if(n<5) cout<<endl<<"tiny";
+    cout<<area<<endl;
+    if(n<5) cout<<"tiny";
 
 
     return 0;
