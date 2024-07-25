@@ -9,7 +9,7 @@ int main() {
         cout<<"book";
     }else if(n>=1000){
         cout<<"mask";
-    }else if(n>=500){
+    }else{
         cout<<"pen";
     }
     return 0;
