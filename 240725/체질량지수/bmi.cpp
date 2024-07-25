@@ -12,12 +12,9 @@ int main() {
 
     bmi=(10000*weight)/(height*height);
 
-    if(bmi>=25){
-        state="Obesity";
-        cout<<bmi<<endl<<state;
-    }else{
-        cout<<bmi;
-    }
+    cout << bmi << endl;
+    
+	if(bmi >= 25) cout << "Obesity";
 
     return 0;
 }
