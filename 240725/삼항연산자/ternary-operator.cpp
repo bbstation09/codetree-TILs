@@ -8,7 +8,7 @@ int main() {
     string result;
     cin>>score;
 
-    result = (grade=0) ? "pass" : "failure";
+    result = (score=100) ? "pass" : "failure";
 
     cout<<result;
     return 0;
