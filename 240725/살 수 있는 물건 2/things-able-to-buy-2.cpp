@@ -9,8 +9,10 @@ int main() {
         cout<<"book";
     }else if(n>=1000){
         cout<<"mask";
-    }else{
+    }else if(n>=500){
         cout<<"pen";
+    }else{
+        cout<<"no";
     }
     return 0;
 }
