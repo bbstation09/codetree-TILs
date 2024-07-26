@@ -6,14 +6,19 @@ int main() {
     int month;
     cin>>month;
 
-    if(month>=3 && month<=5){
-        cout<<"Spring";
-    }else if(month>=6 && month<=8){
-        cout<<"Summer";
-    }else if(month>=9 && month<=11){
-        cout<<"Fall";
-    }else{
+    // 간결한 코드 ver
+
+    // 1 2 12
+    if(month >= 12 || month <= 2){
         cout<<"Winter";
+    }else if(month >=9){
+        // 9 10 11
+        cout<<"Fall";
+    }else if(month >= 6){
+        // 6 7 8
+        cout<<"Summer";
+    }else{
+        cout<<"Spring";
     }
 
     return 0;
