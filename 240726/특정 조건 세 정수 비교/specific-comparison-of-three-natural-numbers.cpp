@@ -1,5 +1,4 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
 
 int main() {
@@ -7,7 +6,10 @@ int main() {
     int a,b,c,min_val;
     cin>>a>>b>>c;
 
-    min_val=min({a,b,c});
+    if(a <= b && a <= c)
+		cout << "1 ";
+	else
+		cout << "0 ";
 
     if(a==min_val){
         cout<<"1 ";
